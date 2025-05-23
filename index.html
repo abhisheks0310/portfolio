@@ -3,42 +3,34 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Abhishek Sharma | Coming Soon</title>
+  <title>Abhishek Sharma | Building</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
     * {
-      box-sizing: border-box;
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      height: 100%;
+      font-family: 'Inter', sans-serif;
     }
 
     body {
-      font-family: 'Inter', sans-serif;
-      background: linear-gradient(135deg, #ecf0f3, #dfe6ed);
-      color: #2c3e50;
+      background: url('https://images.unsplash.com/photo-1581276879432-15a57c7697e4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80') no-repeat center center;
+      background-size: cover;
+      color: #fff;
       display: flex;
       flex-direction: column;
-      min-height: 100vh;
+      justify-content: space-between;
     }
 
     header {
-      background-color: #ffffffee;
       padding: 1rem 2rem;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-      text-align: center;
-      font-size: 1.5rem;
+      font-size: 1.2rem;
       font-weight: 600;
       letter-spacing: 1px;
-    }
-
-    footer {
-      background-color: #ffffffee;
-      padding: 1rem 2rem;
-      text-align: center;
-      font-size: 0.9rem;
-      color: #888;
-      margin-top: auto;
-      box-shadow: 0 -2px 5px rgba(0,0,0,0.05);
     }
 
     main {
@@ -47,32 +39,30 @@
       align-items: center;
       justify-content: center;
       text-align: center;
-      padding: 2rem;
-    }
-
-    .card {
-      background-color: white;
-      padding: 3rem 4rem;
-      border-radius: 16px;
-      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-      animation: fadeInUp 1.5s ease;
     }
 
     .message {
-      font-size: 2rem;
-      font-weight: 600;
+      font-size: 2.5rem;
+      font-weight: 500;
+      background: rgba(0, 0, 0, 0.4);
+      padding: 1rem 2rem;
+      border-radius: 12px;
       animation: pulse 2s infinite;
     }
 
-    @keyframes fadeInUp {
-      from {
-        opacity: 0;
-        transform: translateY(30px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
+    footer {
+      background: #ffffffee;
+      color: #333;
+      padding: 1.5rem 2rem;
+      display: flex;
+      justify-content: space-around;
+      font-size: 0.9rem;
+      flex-wrap: wrap;
+    }
+
+    footer div {
+      margin: 0.5rem 0;
+      min-width: 120px;
     }
 
     @keyframes pulse {
@@ -81,35 +71,35 @@
         transform: scale(1);
       }
       50% {
-        opacity: 0.7;
+        opacity: 0.8;
         transform: scale(1.05);
       }
     }
 
     @media (max-width: 600px) {
-      .card {
-        padding: 2rem;
+      .message {
+        font-size: 1.8rem;
       }
 
-      .message {
-        font-size: 1.5rem;
+      footer {
+        flex-direction: column;
+        align-items: center;
       }
     }
   </style>
 </head>
 <body>
   <header>
-    Abhishek Sharma
+    AS
   </header>
 
   <main>
-    <div class="card">
-      <div class="message">Building…</div>
-    </div>
+    <div class="message">Building…</div>
   </main>
 
   <footer>
-    &copy; 2025 Abhishek Sharma. All rights reserved.
+    <div><strong>Location</strong><br/>India</div>
+    <div><strong>Contact</strong><br/>me@abhisheksharma.dev</div>
   </footer>
 </body>
 </html>
